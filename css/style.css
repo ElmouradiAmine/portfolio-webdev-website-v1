@@ -187,7 +187,7 @@ body {
 }
 .about-me__image {
   flex: 1;
-  width: 100%;
+  width: 50%;
   object-fit: cover;
   object-position: center;
   transform: scaleX(-1);
