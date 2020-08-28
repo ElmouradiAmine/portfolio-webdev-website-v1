@@ -54,7 +54,7 @@ main {
 }
 
 .heading-2 {
-  font-size: 2.3rem;
+  font-size: 2.15rem;
   font-weight: 600;
 }
 
@@ -543,6 +543,7 @@ a:link {
   object-fit: cover;
   object-position: center;
   grid-column: 1 / 2;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
 }
 
 /* END EXPERIENCE */
@@ -552,13 +553,11 @@ a:link {
   margin-top: 10rem;
   margin-bottom: 10rem;
   padding: 10rem 15%;
-  height: 100vh;
   box-shadow: 0.5rem 0.5rem 4rem 0.7rem rgba(4, 195, 255, 0.1);
   transform: skewY(-10deg);
 }
-.portfolio-section  > * {
+.portfolio-section > * {
   transform: skewY(10deg);
-
 }
 .portfolio-section__nav-list {
   display: flex;
@@ -575,10 +574,45 @@ a:link {
 }
 
 .portfolio-section__nav-item--disabled {
-
   color: grey;
   font-weight: 300;
   font-style: italic;
+}
+
+.portfolio-section__content {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(auto, 50%));
+  grid-gap: 3rem;
+}
+
+.portfolio-section__card {
+  box-shadow: var(--shadow-primary);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-section__image {
+  width: 100%;
+}
+
+.portfolio-section__text {
+  padding: 1rem;
+}
+
+.portfolio-section__skills {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.skill {
+  border-radius: 100px;
+  padding: 0.1rem 1rem;
+  border: 1px solid var(--color-primary);
+  margin-bottom: 1rem;
+  margin-right: 1rem;
 }
 
 /* END PORTFOLIO*/
