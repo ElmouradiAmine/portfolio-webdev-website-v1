@@ -71,10 +71,14 @@ main {
   box-shadow: var(--shadow-primary);
 }
 
-a,
+a,a:active,
 a:visited,
 a:link {
   text-decoration: none;
+  color: inherit;
+  display: block;
+  border: none;
+  outline:none;
 }
 
 .header__logo {
@@ -591,10 +595,17 @@ a:link {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  transition: all 0.2s;
+  cursor: pointer;
 }
+.portfolio-section__card:hover {
+  transform: translateY(-1rem) scale(1.1);
+}
+
 
 .portfolio-section__image {
   width: 100%;
+  height: 90%;
 }
 
 .portfolio-section__text {
@@ -695,14 +706,14 @@ a:link {
 /* COMPONENTS */
 /* BUTTON */
 .btn {
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: center;
   font-size: 1.6rem;
   border: none;
   height: 5rem;
   width: 20rem;
-  color: white;
+  color: white!important;
   border-radius: 100px;
   font-weight: 600;
   transition: all 0.2s;
