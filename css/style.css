@@ -65,6 +65,7 @@ main {
 
 /* START HEADER */
 .header {
+  width: 100vw;
   padding: 0 15%;
   display: flex;
   justify-content: space-between;
@@ -129,7 +130,7 @@ a:link {
 /* START INTRODUCTION */
 .introduction {
   display: flex;
-  height: 80vh;
+  min-height: 80vh;
   padding: 0 15%;
   justify-content: center;
   align-items: center;
@@ -1026,7 +1027,7 @@ a:link {
     display: block;
     cursor: pointer;
     position: fixed;
-    right: 5%;
+    right: 3%;
     z-index: 11;
   }
 }
