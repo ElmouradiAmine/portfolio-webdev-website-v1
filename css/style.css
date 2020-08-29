@@ -797,6 +797,40 @@ a:link {
   margin-bottom: 8rem;
 }
 
+.fade-in {
+  opacity: 0;
+  transition: all 0.2s ease-in;
+}
+
+.from-left {
+  opacity: 0;
+  transform: translateX(-20rem);
+}
+.from-left.appear {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 0.4s ease-in-out;
+
+}
+
+.from-right {
+  opacity: 0;
+  transform: translateX(20rem);
+}
+.from-right.appear {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 0.4s ease-in-out;
+}
+
+
+.from-right {
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
 @media screen and (max-width: 1024px) {
   html {
     font-size: 45%;
@@ -954,7 +988,6 @@ a:link {
 
   .hamburger .line.open {
     background: white;
-
   }
 
   .nav__list {
@@ -984,7 +1017,6 @@ a:link {
     color: white;
     transform: translateY(-3px) scale(1.1);
   }
-
 
   .nav__list.open {
     clip-path: circle(1500px at 95% -20%);
