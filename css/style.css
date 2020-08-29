@@ -852,7 +852,7 @@ a:link {
 
   .introduction {
     flex-direction: column;
-    padding: 0 10%;
+    padding: 5rem 10%;
   }
 
   .introduction__image {
