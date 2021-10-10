@@ -48,6 +48,10 @@ main {
   margin: auto;
 }
 
+b {
+  font-weight: 600;
+}
+
 .heading-1 {
   color: var(--color-primary);
   font-size: 4.8rem;
@@ -154,12 +158,14 @@ a:link {
 }
 
 .introduction__image {
-  height: 60%;
+  max-height: 42rem;
   display: inline-block;
   border-radius: 50%;
   border: 1.75rem solid white;
   box-shadow: -1rem 1rem 6rem 1rem rgba(4, 195, 255, 0.1);
 }
+
+
 
 .shape-wave {
   position: absolute;
@@ -824,9 +830,6 @@ a:link {
   transition: all 0.4s ease-in-out;
 }
 
-
-.from-right {
-}
 
 .fade-in.appear {
   opacity: 1;
